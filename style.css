@@ -1,38 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     background: url('images/bg-desktop.svg') , hsl(257, 40%, 49%);
-    background-size:contain;
-    background-position:center;
-    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     width: auto;
     height: 100vh;
 }
-main{
+
+main {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    
 }
-header{
+
+header {
     display: flex;
-    justify-content:left;
+    justify-content: left;
     align-items: center;
     width: 80%;
     height: 200px;
     margin-left: 35px;
 }
 
-.intro{
+.intro {
     color: white;
     display: flex;
     flex-direction: row;
@@ -43,30 +44,34 @@ header{
     height: 100%;
 }
 
-.i-img{
+.i-img {
     width: 50%;
 }
-.i-img img{
+
+.i-img img {
     width: 90%;
-    
 }
 
-article{
+article {
     width: 27%;
     height: 90%;
 }
 
-article h1{
+article h1,
+article p {
     color: white;
+    margin-bottom: 20px;
+}
+
+article h1 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
 }
-article p{
-    color: white;
+
+article p {
     font-size: 1.2rem;
-    margin-bottom: 20px;
 }
-.btn{
+
+.btn {
     background-color: white;
     color: hsl(257, 40%, 49%);
     padding: 10px 50px;
@@ -76,38 +81,33 @@ article p{
     border: none;
     outline: none;
     transition: all 0.3s ease-in-out;
-    width:fit-content;
-    
+    width: fit-content;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-
-    /* disable selecting text */
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
-
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: hsl(300, 69%, 71%);
     color: white;
 }
 
-
-
-
-.social-links{
+.social-links {
     display: flex;
-    justify-content:end;
-    align-items:normal;
+    justify-content: end;
+    align-items: normal;
     width: 90%;
     height: 40px;
     position: relative;
 }
-a{
+
+.social-links a {
     text-decoration: none;
 }
 
-.social-links i{
+.social-links i {
     width: 30px;
     height: 30px;
     color: white;
@@ -122,107 +122,105 @@ a{
     justify-content: center;
     align-items: center;
 }
-.social-links i:hover{
+
+.social-links i:hover {
     background-color: white;
     color: hsl(257, 40%, 49%);
 }
 
-
 .attribution {
-  font-size: 11px;
-  text-align: center;
-
- 
+    font-size: 11px;
+    text-align: center;
     display: none;
     position: absolute;
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+    color: hsl(228, 45%, 44%);
 }
 
 /* Adjust with devices width */
+
 /* Default styles for all devices */
-  /* Mobile styles */
-  @media only screen and (max-width: 715px) {
-    /* Add your mobile-specific styles here */
+@media only screen and (max-width: 715px) {
     body {
         background: url('images/bg-mobile.svg') , hsl(257, 40%, 49%);
-        background-size:contain;
-        background-position:top;
-        background-repeat:no-repeat;
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
         width: auto;
         height: 100vh;
     }
-    main{
+
+    main {
         width: 90%;
         height: 90%;
         margin-left: 20px;
         margin-right: 20px;
-
     }
-    header{
-        display: flex;
-        justify-content:left;
-        align-items: center;
+
+    header {
         width: 100%;
         height: fit-content;
         margin-top: 40px;
         margin-bottom: 4%;
     }
-    header img{
+
+    header img {
         width: 35%;
     }
 
-    .intro{
+    .intro {
         margin-top: 50px;
         flex-direction: column;
-        justify-content:start;
+        justify-content: start;
         align-items: center;
         width: 100%;
         height: 100%;
         gap: 7%;
     }
-    .i-img{
+
+    .i-img {
         width: 100%;
         display: flex;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
     }
-    .i-img img{
+
+    .i-img img {
         width: 90%;
         margin: auto;
         padding: auto;
     }
-    article{
+
+    article {
         width: 90%;
         height: fit-content;
         display: flex;
         flex-direction: column;
-        justify-content:flex-start;
+        justify-content: flex-start;
         align-items: center;
         text-align: center;
     }
-    article h1{
-        font-size:1.9rem ;
+
+    article h1 {
+        font-size: 1.9rem;
     }
 
-    article p{
-        font-size:1.2rem;
+    article p {
+        font-size: 1.2rem;
         margin-bottom: 30px;
     }
-    .btn{
+
+    .btn {
         width: 50%;
         padding: 15px 20px;
     }
-    .social-links{
-        display: flex;
-        justify-content:center;
+
+    .social-links {
+        justify-content: center;
         width: 100%;
         height: 40px;
         position: relative;
     }
-    
-   
-  
-  }
-  
+}
